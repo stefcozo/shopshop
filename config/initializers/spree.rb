@@ -12,6 +12,9 @@ Spree.config do |config|
 
   # Default currency for new sites
   config.currency = "MDL"
+  
+  
+ 
 
   # from address for transactional emails
   config.mails_from = "store@example.com"
@@ -55,7 +58,7 @@ end
 Spree::Frontend::Config.configure do |config|
   config.use_static_preferences!
 
-  config.locale = 'ro'
+  config.locale = 'md'
 end
 
 Spree::Backend::Config.configure do |config|
@@ -71,3 +74,4 @@ Spree::Api::Config.configure do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
