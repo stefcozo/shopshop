@@ -29,6 +29,13 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
+# Adaugam bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'
+
+# Adaugam Font Awesome
+gem 'font-awesome-sass'
+
+
 # Adaug Ecommerce Solidus
 gem 'solidus'
 gem 'solidus_auth_devise'
