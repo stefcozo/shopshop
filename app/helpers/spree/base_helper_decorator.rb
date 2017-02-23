@@ -7,7 +7,7 @@ module Spree::BaseHelper
 end
 
 #Breadcrumbs
-def taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
+def taxon_breadcrumbs_deco(taxon, separator = '', breadcrumb_class = 'breadcrumbs')
   return '' if current_page?('/') || taxon.nil?
 
   crumbs = [[Spree.t(:home), spree.root_path]]
@@ -29,9 +29,10 @@ def taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class
       end + (crumb == crumbs.last ? '' : separator)
     end
   end
-
-  content_tag(:nav, content_tag(:ol, raw(items.map(&:mb_chars).join), class: breadcrumb_class, itemscope: '', itemtype: 'https://schema.org/BreadcrumbList'), id: 'breadcrumbs', class: 'sixteen columns')
+ content_tag(:div, content_tag(:div, content_tag(:div, content_tag(:div, content_tag(:ul, raw(items.map(&:mb_chars).join), itemscope: '', itemtype: 'https://schema.org/BreadcrumbList'), class: 'col-sm-12'), class: "row"), class: "container"), class: breadcrumb_class)
+  
 end
+
 
 
 #Sidebar
