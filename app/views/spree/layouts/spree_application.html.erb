@@ -9,30 +9,28 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
         
-      <%= render :partial => 'spree/shared/header' %>
-      <section class="section light-backgorund">
-        <div class="container">
-          
-          <div id="wrapper" class="row" data-hook>
+    <%= render :partial => 'spree/shared/header' %>
+      
+    <section class="<%= current_page?(root_path) ? "section light-backgorund" : "section" %>">
+        <div class="container" >
+            <div id="wrapper" class="row" data-hook>
            
-            <%= taxon_breadcrumbs(@taxon) %>
+                <%= taxon_breadcrumbs(@taxon) %>
   
-            <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+                <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
             
-            <div class="col-sm-8 col-md-9">
-              <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
-                <%= flash_messages %>
-                <%= yield %>
-              </div>
+                <div  class="<%= !content_for?(:sidebar) ? "col-xs-12 col-sm-12 col-md-12" : "col-sm-8 col-md-9" %>" data-hook>
+                    <%= flash_messages %>
+                    <%= yield %>
+                </div>
+            
+                <%= yield :templates %>
+            
             </div>
   
-              <%= yield :templates %>
+            <%= render :partial => 'spree/shared/footer' %>
             
-          
-          </div>
-  
-        <%= render :partial => 'spree/shared/footer' %>
-      </div>
+        </div>
     </section>
   </body>
 </html>

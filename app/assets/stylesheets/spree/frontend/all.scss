@@ -5,8 +5,5 @@
 @import 'mix';
 @import 'layout';
 @import 'elements';
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
 
-.is-sticky {
-    height: 100px;
-}

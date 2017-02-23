@@ -4,7 +4,7 @@
         <% @taxonomies.each do |taxonomy| %>
             <% cache [I18n.locale, taxonomy, max_level] do %>
                 <li class="header">
-                    <h6 class="text-uppercase"><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %><i class="fa fa-navicon pull-right"></i></h6>
+                    <h6 class="text-uppercase"><%= taxonomy.name %><%#= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %><i class="fa fa-navicon pull-right"></i></h6>
                 </li>
                 <%= sidebar_tree(taxonomy.root, @taxon, max_level) %>
         <% end %>
