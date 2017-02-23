@@ -75,3 +75,5 @@ end
 
 Spree.user_class = "Spree::LegacyUser"
 
+#Am adaugat filtru din core pentru preturi la fitrarea produselor!
+require "#{Rails.root}/lib/spree/core/product_filters.rb"
