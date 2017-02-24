@@ -3,3 +3,4 @@
 #= require bootstrap
 #= require spree
 #= require jquery_sticky
+#= require main.js
