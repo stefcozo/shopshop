@@ -1,15 +1,30 @@
-<% unless @product_properties.empty? %>  
-  <h6 class="product-section-title"><%= Spree.t('properties')%></h6>
-  <table id="product-properties" class="table-display" data-hook>
-    <tbody>
-      <% @product_properties.each do |product_property| %>
-        <% css_class = cycle('even', 'odd', :name => "properties") %>
-        <tr class="<%= css_class %>">
-          <td><strong><%= product_property.property.presentation %></strong></td>
-          <td><%= product_property.value %></td>
-        </tr>
-      <% end %>
-      <% reset_cycle('properties') %>
-    </tbody>
-  </table>
-<% end %>
+<% unless @product_properties.empty? %>
+  <div class="tab-content style2">
+    <div class="tab-pane active" id="description">
+      <h5 class="product-section-title"><%= Spree.t('properties')%></h5>
+        <hr class="spacer-15">
+        <div id="product-properties" class="row" data-hook>
+          <div class="col-sm-12 col-md-6">
+            <dl class="dl-horizontal">
+              <% @product_properties.each_with_index do |product_property, i| %>
+                <% if i % 2 == 0 %>
+                  <dt><%= product_property.property.presentation %><dd><%= product_property.value %></dd></dt>
+                 <% end %>
+              <% end %>
+              <% reset_cycle('properties') %>
+            </dl>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <dl class="dl-horizontal">
+              <% @product_properties.each_with_index do |product_property, i| %>
+                <% if i % 2 == 1 %>
+                  <dt><%= product_property.property.presentation %><dd><%= product_property.value %></dd></dt>
+                 <% end %>
+              <% end %>
+              <% reset_cycle('properties') %>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>

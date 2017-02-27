@@ -1,10 +1,10 @@
 <!--<header id="header" class="row" data-hook>
   <figure id="logo" class="columns six " data-hook><%#= logo img_options:{ class: 'img-responsive', width: '95' } %></figure>
+          <%#= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
   <%#= render :partial => 'spree/shared/nav_bar' %>
-  <%#= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
 </header> -->
-
-<section class="primary-background">
+<header>
+<section class="primary-background hidden-xs">
     <div class="container-fluid">
         <div class="row grid-space-0">
             <div class="col-sm-12">
@@ -20,25 +20,10 @@
 
 <div class="topBar inverse">
     <div class="container">
-        <ul class="list-inline pull-left hidden-xs">
-            <li><span class="text-primary">Ai o intrebare?</span> Suna +373 69 999 999</li>
+        <ul class="list-inline pull-left">
+            <li><span class="text-primary"><%= Spree.t(:header_call) %></span> <%= Spree.t(:header_call_call) %> +373 69 999 999</li>
         </ul>
-        
-        <ul class="topBarNav pull-right">
-            <li class="linkdown">
-                <a href="javascript:void(0);">
-                    <span class="">
-                      <img src="http://diamondcreative.net/plus-v1.1/img/flags/flag-french.jpg" class="mr-5" alt="">
-                        Română 
-                        <i class="fa fa-angle-down ml-5"></i>
-                    </span>    
-                </a>
-                <ul class="w-100">
-                    <li><a href="javascript:void(0);"><img src="http://diamondcreative.net/plus-v1.1/img/flags/flag-french.jpg" class="mr-5" alt="">Русский</a></li>
-                    <li class="active"><a href="javascript:void(0);"><img src="http://diamondcreative.net/plus-v1.1/img/flags/flag-french.jpg" class="mr-5" alt="">Română</a></li>
-                </ul>
-            </li>
-        </ul>
+         <%= render :partial => 'spree/shared/locale_selector' %> <!-- genereaza limbile in dreapta -->
     </div><!-- end container -->
 </div><!-- end topBar -->
 
@@ -47,14 +32,11 @@
         <div class="row table">
             <div class="col-sm-3 vertical-align text-left hidden-xs">
                 <a href="javascript:void(0);">
-                    <img class="image-responsive" width="160" src="https://s18.postimg.org/4gu1zrwmx/logo_azur.png" alt="">
-                </a>
+                    <figure id="logo" class="columns six " data-hook><%= logo img_options:{ class: 'img-responsive', width: '160' } %></figure>
             </div><!-- end col -->
-            <div class="col-sm-6 vertical-align text-center">
-                <input type="text" placeholder="Search" name="email" class="form-control input-md">
-            </div><!-- end col -->
+            <%= render :partial => 'spree/shared/search' %>
         <!-- Bagam Social Media /facebook /instagram /odno... -->    
-            <div class="col-sm-3 vertical-align header-items hidden-xs">
+            <div class="col-sm-3 vertical-align header-items">
                         <div class="header-item mr-5 ">
                             <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="facebook">
                                 <i class="fa fa-facebook"></i>
@@ -98,12 +80,14 @@
                 </div>
                 <div id="navbar-collapse-3" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="elements.html">Elements</a></li>
-                        <li><a href="elements.html">Elements</a></li>
-                        <li><a href="elements.html">Elements</a></li>
+                        <li class="active"><a href="<%= root_path %>"><%= Spree.t(:home) %></a></li>
+                        <li><a href=""><%= Spree.t(:about_us) %></a></li>
+                        <li><a href=""><%= Spree.t(:contact_us) %></a></li>
+                        <li><a href=""><%= Spree.t(:delivery) %></a></li>
                         
                     </ul><!-- end navbar-nav -->
                 </div><!-- end navbar collapse -->
             </div><!-- end container -->
         </div><!-- end navbar -->
+</header>
         

@@ -1,0 +1,26 @@
+<nav class="columns sixteen">
+  <ul id="main-nav-bar" class="inline" data-hook>
+    <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+    <li id="link-to-cart" data-hook>
+      <noscript>
+        <%= link_to Spree.t(:cart), '/cart' %>
+      </noscript>
+      &nbsp;
+    </li>
+    <script>Spree.fetch_cart('<%= j spree.cart_link_url %>')</script>
+  </ul>
+</nav>
+
+<!--<% if SolidusI18n::Config.available_locales.many? %>
+  <li id="locale-select" data-hook>
+    <%= form_tag spree.set_locale_path, class: 'navbar-form' do %>
+      <div class="form-group">
+        
+        <%= select_tag(:switch_to_locale,
+          options_for_select(available_locales_options, I18n.locale),
+          class: 'form-control') %>
+        <noscript><%= submit_tag %></noscript>
+      </div>
+    <% end %>
+  </li>
+<% end %>-->

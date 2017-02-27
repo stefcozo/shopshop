@@ -1,0 +1,36 @@
+<ul class="topBarNav pull-right dropdown">
+    <li class="linkdown" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <% if I18n.locale == :en %>
+            <%= image_tag('https://s17.postimg.org/5ls5v1c7z/moldova.png') %>
+            <span class="hidden-xs" style="padding-left:5px;"><%= Spree.t(:lang) %></span>
+            <span class="caret"></span>
+        <% elsif I18n.locale == :ro %>
+            <%= image_tag('https://s17.postimg.org/5ls5v1c7z/moldova.png') %>
+            <span class="hidden-xs" style="padding-left:5px;"><%= Spree.t(:lang) %></span>
+            <span class="caret"></span>
+        <% elsif I18n.locale == :ru %>
+            <%= image_tag('https://s17.postimg.org/m89q4455r/russia.png') %>
+            <span class="hidden-xs" style="padding-left:5px;"><%= Spree.t(:lang) %></span>
+            <span class="caret"></span>
+        <% else %>
+        <% end %>
+    </li>
+    <ul class="dropdown-menu droTopBar" aria-labelledby="dLabel">
+        <% SolidusI18n::Config.available_locales.each do |local| %>
+            <li><%= link_to(locale: local) do %>
+                <% if local == :en %>
+                    <%= image_tag('https://s17.postimg.org/5ls5v1c7z/moldova.png') %>
+                    <%= content_tag(:span, "English") %>
+                <% elsif local == :ro %>
+                    <%= image_tag('https://s17.postimg.org/5ls5v1c7z/moldova.png') %>
+                    <%= content_tag(:span, "Română") %>
+                <% elsif local == :ru %>
+                    <%= image_tag('https://s17.postimg.org/m89q4455r/russia.png') %>
+                    <%= content_tag(:span, "Русский") %>
+                <% else %>
+                <% end %>
+            <% end %>
+            </li>
+        <% end %>        
+  </ul>
+</ul>

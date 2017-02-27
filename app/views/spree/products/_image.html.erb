@@ -3,18 +3,12 @@
       <%= image_tag image.attachment.url(:product), itemprop: "image", class:"aista" %>
     <% else %>
       <%#= image_tag @product.display_image.attachment(:product), itemprop: "image", class:"altu"%>
-      <% @product.images.each_with_index do |img, i| %>
+      <% @product.variant_images.each_with_index do |img, i| %>
       <div class="item <%= 'active' if i.zero? %>">
         <figure>
         <%= image_tag(img.attachment.url(:product)) %>
         </figure>
         </div>
-      <% @product.variant_images.each_with_index do |img, i| %>
-      <div class="item">
-        <figure>
-        <%= image_tag(img.attachment.url(:product)) %>
-        </figure>
-        </div>
-    <% end %>
+      
     <% end %>
     <% end %>
