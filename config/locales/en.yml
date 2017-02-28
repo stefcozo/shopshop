@@ -651,7 +651,6 @@ en:
           attributes:
             user_id:
               default_address_exists: "already has a default address"
-
   devise:
     confirmations:
       confirmed: Your account was successfully confirmed. You are now signed in.
@@ -2079,3 +2078,7 @@ en:
     product_code: "Product code:"
     limbaj: "Language"
     lang: "English"
+    information: "Information"
+    foot_info: "Your call matters to us."
+    orar: "Monday Sunday"
+    intouch: "Stay in touch"

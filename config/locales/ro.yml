@@ -1349,7 +1349,7 @@ ro:
     product_code: "Codul produsului:"
     limbaj: "Limbă"
     lang: "Română"
-    
-    footer:
-      
-      
+    information: "Informaţii"
+    foot_info: "Fiecare client este important pentru noi."
+    orar: "Luni - Duminică"
+    intouch: "Ține legătura"
