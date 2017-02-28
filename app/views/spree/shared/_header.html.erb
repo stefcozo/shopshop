@@ -79,9 +79,9 @@
                 <div id="navbar-collapse-3" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%= root_path %>"><%= Spree.t(:home) %></a></li>
-                        <li><%= link_to "About Us", main_app.aboutus_path %></li>
-                        <li><a href=""><%= Spree.t(:contact_us) %></a></li>
-                        <li><a href=""><%= Spree.t(:delivery) %></a></li>
+                        <li><%= link_to Spree.t(:about_us), about_index_path %></li>
+                        <li><%= link_to Spree.t(:contact_us), contact_index_path %></li>
+                        <li><%= link_to Spree.t(:delivery), delivery_index_path %></li>
                     </ul><!-- end navbar-nav -->
                 </div><!-- end navbar collapse -->
             </div><!-- end container -->

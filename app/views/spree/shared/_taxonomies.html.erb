@@ -1,6 +1,7 @@
 <% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
 <div class="navbar-vertical">
     <ul class="nav nav-stacked">
+        <% @taxonomies = Spree::Taxonomy.all %>
         <% @taxonomies.each do |taxonomy| %>
             <% cache [I18n.locale, taxonomy, max_level] do %>
                 <li class="header">
