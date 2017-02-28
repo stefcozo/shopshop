@@ -17,7 +17,6 @@
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end topBanner --> 
-
 <div class="topBar inverse">
     <div class="container">
         <ul class="list-inline pull-left">
@@ -31,8 +30,7 @@
     <div class="container">
         <div class="row table">
             <div class="col-sm-3 vertical-align text-left hidden-xs">
-                <a href="javascript:void(0);">
-                    <figure id="logo" class="columns six " data-hook><%= logo img_options:{ class: 'img-responsive', width: '160' } %></figure>
+                    <%= logo img_options:{ class: 'img-responsive', width: '160' } %>
             </div><!-- end col -->
             <%= render :partial => 'spree/shared/search' %>
         <!-- Bagam Social Media /facebook /instagram /odno... -->    
@@ -81,10 +79,9 @@
                 <div id="navbar-collapse-3" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<%= root_path %>"><%= Spree.t(:home) %></a></li>
-                        <li><a href=""><%= Spree.t(:about_us) %></a></li>
+                        <li><%= link_to "About Us", main_app.aboutus_path %></li>
                         <li><a href=""><%= Spree.t(:contact_us) %></a></li>
                         <li><a href=""><%= Spree.t(:delivery) %></a></li>
-                        
                     </ul><!-- end navbar-nav -->
                 </div><!-- end navbar collapse -->
             </div><!-- end container -->

@@ -49,3 +49,4 @@ def sidebar_tree(root_taxon, current_taxon, max_level = 1)
         safe_join(taxons, "\n")
       end
 end
+

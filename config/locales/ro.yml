@@ -1,4 +1,11 @@
 ro:
+  views:
+    pagination:
+      first: "&laquo; Prima"
+      last: "Ultima &raquo;"
+      previous: "« Precedentă"
+      next: "Urmatoarea »"
+      truncate: "..."
   activerecord:
     attributes:
       spree/address:
@@ -894,8 +901,8 @@ ro:
     overview: Sumar
     package_from: pachet din
     pagination:
-      next_page: pagina următoare »
-      previous_page: "« pagina anterioară"
+      next_page: "следующая страница »"
+      previous_page: "« предыдущая страница"
       truncate: "…"
     password: Parola
     paste: Lipire
@@ -1342,3 +1349,7 @@ ro:
     product_code: "Codul produsului:"
     limbaj: "Limbă"
     lang: "Română"
+    
+    footer:
+      
+      
