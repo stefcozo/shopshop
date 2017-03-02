@@ -2082,3 +2082,11 @@ en:
     foot_info: "Your call matters to us."
     orar: "Monday Sunday"
     intouch: "Stay in touch"
+    modal_instructions: "Instructions:"
+    text_instructions: "To plance an order, pass the product code to the operator by calling the number bellow."
+    modal_operator: "Operator:"
+    modal_livrare: "Free Shipping"
+    modal_dela: "Over"
+    modal_intoarcere: "Free Return"
+    modal_saptamina: "for 1 week"
+    
