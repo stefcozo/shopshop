@@ -26,17 +26,17 @@
       <% products.each do |product| %>
         <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
         <div class="col-sm-6 col-md-3">
-          <div id="product_<%= product.id %>" class="thumbnail store style2 <%= cycle("alpha", "secondary", "", "omega secondary", name: "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+          <div id="product_<%= product.id %>" class="thumbnail store style1 <%= cycle("alpha", "secondary", "", "omega secondary", name: "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
             <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
               <div class="header">
                 <figure class="layer">
                   <%= link_to image_tag(product.display_image.attachment(:large), itemprop: "image"), url, itemprop: 'url' %>
                 </figure>
-                <!--<div class="icons">
-                  <a class="icon semi-circle" href=""><i class="fa fa-heart-o"></i></a>
-                  <a class="icon semi-circle" href=""><i class="fa fa-gift"></i></a>
-                  <a class="icon semi-circle" href="" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                </div>-->
+                <div class="icons">
+                  <a class="icon round" href="<%= url %>"><i class="fa fa-plus"></i></a>
+                  <!--<a class="icon semi-circle" href=""><i class="fa fa-gift"></i></a>
+                  <a class="icon semi-circle" href="" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>-->
+                </div>
               </div>
               <div class="caption">
                   <h6 class="regular"><%= link_to truncate(product.name, length: 20), url, itemprop: "name", title: product.name %></h6>
