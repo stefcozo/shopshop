@@ -1,1 +1,1 @@
-require 'solidus_globalize/fallbacks'
+#require 'solidus_globalize/fallbacks'
