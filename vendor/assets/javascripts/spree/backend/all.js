@@ -10,3 +10,4 @@
 //= require_tree .
 //= require spree/backend/solidus_i18n
 //= require spree/backend/solidus_globalize
+//= require spree/backend/solidus_prototypes

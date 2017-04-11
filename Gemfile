@@ -69,3 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Adaugam conexiune la amazon
 gem 'aws-sdk', '1.67.0'
+
+#Adaugam prototypes
+gem 'solidus_prototypes', github: 'solidusio-contrib/solidus_prototypes'

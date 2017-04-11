@@ -29,6 +29,13 @@ GIT
       routing-filter (~> 0.6.0)
       solidus_core (>= 1.1, < 3)
 
+GIT
+  remote: https://github.com/solidusio-contrib/solidus_prototypes.git
+  revision: 482a4d91fdad90ebad8775a6ecf961f092befb57
+  specs:
+    solidus_prototypes (0.0.1)
+      solidus_core (>= 2.1.0.alpha, < 3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -404,6 +411,7 @@ DEPENDENCIES
   solidus_auth_devise
   solidus_globalize!
   solidus_i18n!
+  solidus_prototypes!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
