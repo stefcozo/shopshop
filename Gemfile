@@ -35,7 +35,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Adaugam Font Awesome
 gem 'font-awesome-sass'
 
-
 # Adaug Ecommerce Solidus
 gem 'solidus'
 gem 'solidus_auth_devise'
@@ -67,3 +66,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Adaugam conexiune la amazon
+gem 'aws-sdk', "< 2.0"
