@@ -68,4 +68,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Adaugam conexiune la amazon
-gem 'aws-sdk', "< 2.0"
+gem 'aws-sdk', '~> 2'
