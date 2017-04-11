@@ -12,5 +12,5 @@ if ENV['AWS_ACCESS_KEY_ID']
 
   Spree::Image.attachment_definitions[:attachment].delete(:url)
   Spree::Image.attachment_definitions[:attachment].delete(:path)
-  Paperclip::Attachment.default_options[:use_timestamp] = false
+  Paperclip::Attachment.default_options[:s3_host_name] = 's3-eu-west-1.amazonaws.com'
 end
