@@ -77,3 +77,8 @@ Spree.user_class = "Spree::LegacyUser"
 
 #Am adaugat filtru din core pentru preturi la fitrarea produselor!
 require "#{Rails.root}/lib/spree/core/product_filters.rb"
+
+#Cite produse sunt pe pagina
+Spree.config do |config|
+  config.products_per_page = 20
+end
