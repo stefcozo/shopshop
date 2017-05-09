@@ -1,6 +1,6 @@
 
     <% if defined?(image) && image %>
-      <%= image_tag image.attachment.url(:large), itemprop: "image", class:"aista" %>
+      <%= image_tag image.attachment.url(:product), itemprop: "image", class:"aista" %>
     <% else %>
       <%#= image_tag @product.display_image.attachment(:product), itemprop: "image", class:"altu"%>
       <% @product.variant_images.each_with_index do |img, i| %>

@@ -9,86 +9,152 @@
                     </div><!-- end col -->
                 </div><!-- end row -->
                 
-                <div class="row column-3">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-boxes style1">
-                            <div class="icon">
-                                <i class="fa fa-commenting-o text-warning"></i>
-                            </div><!-- end icon -->
-                            <div class="box-content">
-                                <h6 class="thin">Need Help?</h6>
-                                <h5 class="text-warning">Use our chat!</h5>
-                            </div>
-                        </div><!-- icon-box -->
-                    </div><!-- end col -->   
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-boxes style1">
-                            <div class="icon">
-                                <i class="fa fa-phone text-info"></i>
-                            </div><!-- end icon -->
-                            <div class="box-content">
-                                <h6 class="thin">Quick question?</h6>
-                                <h5 class="text-info">Call - 123 456 789!</h5>
-                            </div>
-                        </div><!-- icon-box -->
-                    </div><!-- end col -->   
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-boxes style1">
-                            <div class="icon">
-                                <i class="fa fa-envelope-o text-primary"></i>
-                            </div><!-- end icon -->
-                            <div class="box-content">
-                                <h6 class="thin">or send us e-mail</h6>
-                                <h5 class="text-primary">Info@domain.net</h5>
-                            </div>
-                        </div><!-- icon-box -->
-                    </div><!-- end col --> 
-                </div><!-- end row -->
+                
+                
+                <div class="row">
+                    <div class="col-sm-5">
+                        <!--<h6 class="subtitle">Contact</h6>-->
+                        <p><%= Spree.t(:contact_message) %></p>
+                        <ul class="list alt-list">
+                            <li><i class="fa fa-phone"></i> <b><%= Spree.t(:phone) %>:</b> +373 69 667 531 </li>
+                            <li><i class="fa fa-phone"></i> <b><%= Spree.t(:phone) %>:</b> +373 78 495 757 </li>
+                            <li><i class="fa fa-envelope"></i> <b>Email:</b> office@bazineintex.com</li>
+                            <li><i class="fa fa-clock-o"></i> <b><%= Spree.t(:work_hours) %>:</b> 8:00 - 21:00, <%= Spree.t(:orar) %> </li>
+                        </ul>
+                        
+                        <hr class="spacer-15">
+                        
+                        
+                        
+                    </div><!-- end col -->
+                    <div class="col-sm-7">
+                        <div class="panel-group accordion style1 hide" id="question" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionOne" aria-expanded="false" aria-controls="collapseOne">
+                                            I have not received the refund by credit card after refund process completed.
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionOne" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            I have questions about a product’s details
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionTwo" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How do I get coupons or discounts?
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionThree" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionFour" aria-expanded="false" aria-controls="collapseThree">
+                                            How do I cancel an order?
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionFour" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionFive" aria-expanded="false" aria-controls="collapseThree">
+                                            I haven’t received my order. What can I do?
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionFive" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="questionSix">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestionSix" aria-expanded="false" aria-controls="collapseThree">
+                                            The product I received does not match the description. What can I do?
+                                        </a>
+                                    </h4>
+                                </div><!-- end panel-heading -->
+                                <div id="collapseQuestionSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionSix" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, link adipisicing elit. Dicta voluptatem, tenetur eum tempore minus libero voluptates eos doloremque. Dolore minima rem consequuntur exercitationem quaerat deleniti repellendus enim necessitatibus mollitia tenetur?</p>
+                                    </div><!-- end panel-body -->
+                                </div><!-- end collapse -->
+                            </div><!-- end panel -->
+                        </div><!-- end panel-group -->
+                    </div><!-- end col -->
+                </div>
                 
                 <hr class="spacer-30 no-border">
                 
                 <div class="row column-4">
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-4 col-md-4">
                         <div class="icon-boxes style1">
                             <div class="icon">
                                 <i class="fa fa-truck text-dark"></i>
                             </div><!-- end icon -->
                             <div class="box-content">
-                                <h6 class="alt-font text-uppercase">Free Shipping</h6>
-                                <p>Aenean semper lacus sed molestie sollicitudin.</p>
+                                <h6 class="alt-font text-uppercase"><%= Spree.t(:modal_livrare) %></h6>
+                                <p><%= Spree.t(:contact_dela) %></p>
                             </div>
                         </div><!-- icon-box -->
                     </div><!-- end col -->
-                    <div class="col-sm-6 col-md-3">
-                        <div class="icon-boxes style1">
-                            <div class="icon">
-                                <i class="fa fa-life-ring text-dark"></i>
-                            </div><!-- end icon -->
-                            <div class="box-content">
-                                <h6 class="alt-font text-uppercase">Support 24/7</h6>
-                                <p>Aenean semper lacus sed molestie sollicitudin.</p>
-                            </div>
-                        </div><!-- icon-box -->
-                    </div><!-- end col -->
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-4 col-md-4">
                         <div class="icon-boxes style1">
                             <div class="icon">
                                 <i class="fa fa-gift text-dark"></i>
                             </div><!-- end icon -->
                             <div class="box-content">
-                                <h6 class="alt-font text-uppercase">Gift cards</h6>
-                                <p>Aenean semper lacus sed molestie sollicitudin.</p>
+                                <h6 class="alt-font text-uppercase"><%= Spree.t(:contact_cadou) %></h6>
+                                <p><%= Spree.t(:contact_cadou_ms) %></p>
                             </div>
                         </div><!-- icon-box -->
                     </div><!-- end col -->
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-4 col-md-4">
                         <div class="icon-boxes style1">
                             <div class="icon">
                                 <i class="fa fa-credit-card text-dark"></i>
                             </div><!-- end icon -->
                             <div class="box-content">
-                                <h6 class="alt-font text-uppercase">Payment 100% Secure</h6>
-                                <p>Aenean semper lacus sed molestie sollicitudin.</p>
+                                <h6 class="alt-font text-uppercase"><%= Spree.t(:contact_plata) %></h6>
+                                <p><%= Spree.t(:contact_plata_ms) %></p>
                             </div>
                         </div><!-- icon-box -->
                     </div><!-- end col -->
