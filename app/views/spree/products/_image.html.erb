@@ -6,7 +6,7 @@
       <% @product.variant_images.each_with_index do |img, i| %>
       <div class="item <%= 'active' if i.zero? %>">
         <figure>
-        <%= image_tag(img.attachment.url(:product)) %>
+        <%= image_tag(img.attachment.url(:product, :large)) %>
         </figure>
         </div>
       
